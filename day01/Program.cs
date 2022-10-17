@@ -388,14 +388,130 @@
 
 //創建實體的Person
 //person1是一個物件
-using Animal.P;
-Person person1 = new Person();
-person1.age = 18;
-person1.name = "小白";
-person1.height = 160.5;
-
-System.Console.WriteLine(person1.name);
+//Person person1 = new Person();
+//person1.age = 18;
+//person1.name = "小白";
+//person1.height = 160.5;
+//Console.WriteLine(person1.name);
 
 
+//-----------------------------------------------------------------------------------------
+
+//namespace、using namespace是一個空間(可以存放很多模板的空間) 功用是: 分類、管理這些模板
+//using Animal.P;
+//using System;
+//Person person1 = new Person();
+//person1.age = 18;
+//person1.name = "小白";
+//person1.height = 160.5;
 
 
+//-----------------------------------------------------------------------------------------
+//methon 方法(可以在class裡定義一個功能做使用)
+
+//using Animal.P;
+//using System;
+//Person person1 = new Person();
+//person1.age = 18;
+//person1.name = "小白";
+//person1.height = 160.5;
+
+////呼叫method
+// person1.SayHi();
+
+////回傳值為布林值  (person1.IsAdult(); = True )
+//person1.IsAdult();
+//Console.WriteLine(person1.IsAdult()); //需印出來才會看到  不然只有回傳回來 
+
+
+////帶參數
+//person1.Add(2, 3, "我是QQ");   //person1.Add(2, 3, "我是QQ");  =  5
+//Console.WriteLine(person1.Add(2,3,"我是QQ"));   // //需印出來才會看到  不然只有回傳回來 
+
+
+
+////WrintLine是Console Class裡面的一個method，是不回傳資料的(void)
+
+//-----------------------------------------------------------------------------------------
+
+// Main 方法 (要知道程式碼是從什麼時候開始執行的 要看Main方法 )
+
+
+//namespace ConsoleApp1 {
+//    class Program {
+//        static void Main() {
+//            System.Console.WriteLine("哈囉");
+//        }
+//    }
+//}
+
+
+//Contruct建構方法
+//namespace ConsoleApp1 {
+//    class Program {
+//        static void Main() {
+//            System.Console.WriteLine("哈囉");
+//        }
+//    }
+//}
+
+//using Animal.P;
+//namespace ConsoleApp1 {
+//    class Program {
+//        static void Main() {
+//            System.Console.WriteLine("哈囉");
+//            Person person1 = new Person(170.5, 18, "小黑");
+//            System.Console.WriteLine(person1.name);
+//            System.Console.WriteLine(person1.height);
+//            System.Console.WriteLine(person1.age);
+//        }
+//    }
+//}
+
+
+
+
+
+//-----------------------------------------------------------------------------------------
+
+//getter setter
+//get 存取子 "提供"，將該值（字串）進行判斷、處理再回傳 
+//set 存取子 "設定"，用於處理計算及邏輯處理 　 
+//using day01;
+//using System;
+
+//Video video1 =new Video("aa","aa","教育");
+//Console.WriteLine(video1.Type);
+
+
+////-----------------------------------------------------------------------------------------
+
+////static attribute靜態屬性
+
+////Console.WriteLine(video1.video_count);//不可以這樣寫，因為是屬於類別本身的，不屬於物件的屬性
+//Console.WriteLine(Video.video_count); //改寫為這樣才可以
+
+//Video video2 = new Video("aa", "aa", "教育");
+//Console.WriteLine(Video.video_count);
+
+//Video video3 = new Video("aa", "aa", "教育");
+//Console.WriteLine(Video.video_count);
+//Console.WriteLine(video1.getVideoCount()); //呼叫getVideoCount方法
+
+
+//-----------------------------------------------------------------------------------------
+//static method   static class
+
+//Console.WriteLine(Math.Sqrt(36));
+
+
+
+//繼承 inheritance
+
+//Student student1 = new Student("小白", 10, "民安國小" );
+//Console.WriteLine(student1.name);
+//Console.WriteLine(student1.age);
+//Console.WriteLine(student1.school);
+//student1.PrintAge();
+//student1.PrintName();
+//student1.PrintSchool();
